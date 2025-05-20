@@ -1,0 +1,19 @@
+llama-server -hf [model]
+
+models = 
+ggml-org/Mistral-Small-3.1-24B-Instruct-2503-GGUF
+ggml-org/SmolVLM-500M-Instruct-GGUF
+
+llama-server -hf ggml-org/gemma-3-4b-it-GGUF
+llama-server -hf ggml-org/SmolVLM2-2.2B-Instruct-GGUF   ~ 5 sec to proceed
+
+-hf ggml-org/Qwen2-VL-2B-Instruct-GGUF
+hf ggml-org/Qwen2.5-VL-3B-Instruct-GGUF
+
+-hf ggml-org/InternVL3-1B-Instruct-GGUF
+-hf ggml-org/InternVL3-2B-Instruct-GGUF +8/14
+
+-hf ggml-org/Llama-4-Scout-17B-16E-Instruct-GGUF
+
+
+info: https://github.com/ggml-org/llama.cpp/blob/master/docs/multimodal.md
