@@ -1,4 +1,6 @@
-llama-server -hf [model] #private: contact TUM
+llama-server -hf [model] 
+
+#private: contact TUM
 
 -hf ggml-org/gemma-3-4b-it-GGUF
 -hf ggml-org/SmolVLM2-2.2B-Instruct-GGUF   ~ 5 sec to proceed
