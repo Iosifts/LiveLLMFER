@@ -6,7 +6,6 @@ How to run:
 
 Install llama.cpp.
 Follow the instructions on the official GitHub page (ggerganov/llama.cpp).
-Make sure you build and use llava-server.
 
 Start the model server.
 Run:
