@@ -10,7 +10,7 @@ Make sure you build and use llava-server.
 
 Start the model server.
 Run:
-llava-server -hf ggml-org/SmolVLM-500M-Instruct-GGUF -ngl 99
+llama-server -hf ggml-org/SmolVLM-500M-Instruct-GGUF -ngl 99
 The -ngl 99 option enables GPU acceleration (macOS Metal, CUDA, etc.).
 
 Start the backend.
