@@ -1,6 +1,6 @@
 Real-Time Facial Emotion Recognition Demo
 
-This is a simple web demo using llama.cpp and the SmolVLM 500M model to detect facial emotions from your webcam in real time.
+This is a simple web demo using llama.cpp and a finetunned SmolVLM 500M model to detect facial emotions from your webcam in real time.
 
 How to run:
 
