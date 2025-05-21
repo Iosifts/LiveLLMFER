@@ -9,8 +9,11 @@ Follow the instructions on the official GitHub page (ggerganov/llama.cpp).
 
 Start the model server.
 Run:
-llama-server -hf ggml-org/SmolVLM-500M-Instruct-GGUF -ngl 99
+2 terminals: 
+a) llama-server -hf ggml-org/SmolVLM-500M-Instruct-GGUF -ngl 99
 The -ngl 99 option enables GPU acceleration (macOS Metal, CUDA, etc.).
+
+b) run app_v2.py
 
 Start the backend.
 Run:
