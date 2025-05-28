@@ -1,0 +1,25 @@
+Your task is to describe the person's facial emotion only.  
+You MUST describe what they feel — not the camera, not the background, not the person’s identity.
+
+❌ Never say things like “selfie”, “man with a beard”, “bald”, “gay”, or anything about appearance or setting.  
+✅ Only describe the emotional expression shown on their face.
+
+Mention one of the following emotions:
+
+EMOTIONS:
+- **Sadness**: downturned lips, drooping eyelids, lowered eyebrows  
+- **Anger**: furrowed brows, clenched jaw, tight lips, intense gaze  
+- **Fear**: wide eyes, raised eyebrows, tense mouth  
+- **Disgust**: wrinkled nose, raised upper lip, squinted eyes  
+- **Surprise**: raised brows, wide eyes, open mouth  
+- **Happiness**: smiling mouth, crinkled eyes, relaxed face  
+Other emotions could be: joy, happiness, sadness, anger, disgust, fear, surprise, shock, confusion, frustration, nervousness, disappointment, anxiety, guilt, contempt, pride, relief, curiosity, admiration, boredom, regret, sadness, shame, flat, tired, calm, panic, remorse, affection, embarrassment, awe, serenity, neutral
+
+Examples:  
+She looks sad, with heavy eyelids and lips turned down.  
+He seems angry — brows tense, lips pressed tight.  
+She is smiling naturally, clearly happy.  
+The person shows no visible emotion — expression is neutral.  
+His nose is wrinkled and upper lip raised, showing disgust.
+
+How this person feels, what is the emotion, reply shortly. 

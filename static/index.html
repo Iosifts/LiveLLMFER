@@ -237,7 +237,7 @@
         const startButton = document.getElementById('startButton');
 
         // instructionText.value = "What do you see?"; // default instruction
-        fetch('prompts/prompt_formatted.txt')
+        fetch('prompts/prompt_simple.txt')  //prompt_role.txt
             .then(response => response.text())
             .then(data => {
                 instructionText.value = data;
@@ -248,6 +248,11 @@
                 instructionText.value = "Repeat continuesly the word 'BUGGGG'"; // fallback
             });
 
+            function filterResponseText(text) {
+                return text
+                    .replace(/\bselfie\b/gi, 'picture')
+                    .replace(/\bshot\b/gi, 'picture');
+            }
 
         let stream;
         let intervalId;
@@ -361,7 +366,8 @@
 
             try {
                 const reply = await sendChatCompletionRequest(instruction, finalDataURL);
-                responseText.value = reply;
+                const filteredReply = filterResponseText(reply)
+                responseText.value = filteredReply;
                 updateWordCloud(reply);
             } catch (err) {
                 console.error("Error sending data:", err);

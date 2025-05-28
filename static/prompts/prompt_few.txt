@@ -10,10 +10,13 @@ Instructions: \n
 Output Format: \n
 Caption: [One or two vivid, natural-language sentences describing the facial emotion.] \n
 
+Choose one or more emotions from this list:  
+joy or happiness, anger, surprise, disgust, sad or sadness, neutral, fear.
+
 Examples: \n
-Caption: The woman looks genuinely happy, her eyes crinkled with joy and her mouth open in a broad smile.
-Caption: The young man appears tense, with tightly pressed lips and a furrowed brow suggesting concentration or mild frustration.
-Caption: The elderly person has a serene expression, eyes half-closed and mouth slightly curved in a calm, contented smile.
-Caption: The person’s face is largely neutral, though their slightly raised eyebrows and parted lips hint at curiosity or mild surprise.
-Caption: The girl seems tired or withdrawn, her eyelids heavy and lips slack, with no clear emotional signal.
+The woman looks genuinely happy, her eyes crinkled with joy and her mouth open in a broad smile.
+The young man appears angry, with tightly pressed lips and a furrowed brow suggesting concentration or mild frustration.
+The elderly person has a disgust expression, eyes half-closed and mouth slightly curved in a calm, contented smile.
+The person’s face is largely neutral, though their slightly raised eyebrows and parted lips hint at curiosity or mild surprise.
+The girl seems fear or sad, her eyelids heavy and lips slack, with no clear emotional signal.
 Now analyze the following face and generate a caption.

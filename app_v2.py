@@ -13,16 +13,16 @@ from PIL import Image   # (Pillow is installed automatically with rembg)
 # master vocab we want to visualise
 EMOTION_LEXICON = {
     # Positive Emotions
-    "joy", "love", "amusement", "gratitude", "excitement", "admiration", "affection",
+    "joy", "love", "happiness", "amusement", "gratitude", "excitement", "admiration", "affection",
     "approval", "caring", "contentment", "compassion", "desire", "enthusiasm",
     "euphoria", "hope", "inspiration", "interest", "kindness", "optimism", "pride",
     "relief", "satisfaction", "serenity", "trust", "cheerfulness", "confidence",
 
     # Negative Emotions
-    "anger", "annoyance", "anxiety", "betrayal", "contempt", "disappointment",
+    "surprised", "surprise", "angry", "disgust", "sad", "afraid", "disgusted", "fear", "joy", "happy","anger", "annoyance", "anxiety", "betrayal", "contempt", "disappointment",
     "disapproval", "disgust", "embarrassment", "envy", "fear", "frustration", "guilt",
     "grief", "hurt", "jealousy", "loneliness", "panic", "rage", "regret", "remorse",
-    "resentment", "sadness", "shame", "worry", "rejection", "pity", "nervousness",
+    "resentment", "sadness", "shame", "worry", "rejection", "pity", "nervousness", "shocked", "shock", "disbelief"
 
     # Ambiguous or Cognitive Emotions
     "confusion", "curiosity", "surprise", "realization", "awe", "boredom", "hesitation",
@@ -35,10 +35,9 @@ EMOTION_LEXICON = {
 
     # Identity and Context Tags
     "man", "woman", "male", "female", "adult", "child", "elderly",
-    "unknown", "human", "individual",
 
     # Expression Tags
-    "smiling", "frowning", "laughing", "crying", "blinking", "squinting", "yawning",
+    "smiles", "smiling", "frowning", "laughing", "crying", "blinking", "squinting", "yawning",
     "gazing", "glancing", "clenching", "staring", "expressionless",
 
     # Special Use-Case States
@@ -67,7 +66,7 @@ app = Flask(
 
 # ---------- thread-safe caption store ----------
 # deque is fast and has a maxlen so the list never explodes
-CAPTIONS      = deque(maxlen=500)          # keep last 5 000 captions (~hundreds KB)
+CAPTIONS      = deque(maxlen=100)          # keep last xamlen captions (~hundreds KB)
 CAPTIONS_LOCK = threading.Lock()            # because Flask may be multi-threaded
 
 
